@@ -1,0 +1,80 @@
+#photoUpload{
+    display : none;
+}
+
+#sharePhoto{
+  color            :white;
+  background-color : rgb(199, 155, 74);
+  border           : 2px solid white;
+  margin           : auto auto;
+  width            : 35%;
+  height           : 10%;
+  font-size        : 2vw;
+  cursor           : pointer;
+}
+
+#sharePhoto:hover{
+    box-shadow : 0 4px 8px 0 white, 0 6px 20px 0 white;
+}
+
+.content{
+    display : flex;
+    height  : 100%;
+}
+
+
+
+#description{
+    width       : 100%;
+    height      : 80%;
+}
+
+#share{
+    height           : 20%;
+    width            : 101%;
+    background-color :rgb(199, 155, 74);
+    color            :white;
+    font-size        : 2vw;
+    cursor:pointer;
+    border: 1px solid white;
+}
+
+#share:hover{
+  box-shadow : 0 4px 8px 0 white, 0 6px 20px 0 white;
+  cursor     : pointer;
+}
+
+.grid {
+  display               : grid;
+  grid-template-columns : repeat(2, 1fr);;
+  padding               : 2vw;
+}
+
+.container{
+  border  : 1px solid rgb(199, 155, 74);
+  padding : 2vw;
+}
+
+#image{
+  width  : 100%;
+  height : 100%;
+}
+
+#image img {
+  width  : 100%;
+  height : 100%;
+  object-fit: cover;
+}
+
+#image img:hover {
+  box-shadow : 0 4px 8px 0 white, 0 6px 20px 0 white;
+}
+
+#info {
+  padding : 2vw;
+}
+
+#info textarea {
+  width: 100%;
+  
+}

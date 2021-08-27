@@ -1,0 +1,20 @@
+<div class = "content">
+    <!--upload photo button-->
+    <input *ngIf = "post.controls.image.value === ''"  id = "photoUpload" type='file' (change)="readFile($event.target.files)" accept = "acceptedImageFormats" >
+    <button *ngIf = "post.controls.image.value === ''" id = "sharePhoto" onclick="document.getElementById('photoUpload').click()">SHARE IMAGE</button>
+
+    <div class = "grid" *ngIf = "post.controls.image.value !== ''">
+        <!--image of uploaded photo and an input box for the description-->
+        <div class = "container">
+            <div id = "image">
+                <img *ngIf = "post.controls.image.value !== ''" id="image" [src]="post.controls.image.value"  />                
+            </div>
+        </div>
+        <div id = "info">
+            <textarea  id = "description" *ngIf = "post.controls.image.value !== ''" placeholder="DESCRIPTION"></textarea>
+
+            <!--submits the image and description into the database-->
+            <button id = "share" *ngIf = "post.controls.image.value !== ''" >SHARE</button>
+        </div>
+    </div>
+</div>

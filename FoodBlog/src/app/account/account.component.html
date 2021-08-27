@@ -1,0 +1,26 @@
+<div class = "wrapper">
+    <div class = "content">
+        <!--message-->
+        <h3 *ngIf = "signin===true">WELCOME!</h3>
+        <h3 *ngIf = "signin===false">WELCOME BACK!</h3>
+
+        <!--input fields for username and password-->
+        <input id = "input" placeholder="EMAIL">
+        <input id = "input" placeholder="PASSWORD">
+
+        <!--submit form-->
+        <div  id = "button" *ngIf = "signin===true">
+            <p>SIGN-IN</p>
+        </div>
+        <div  id = "button" *ngIf = "signin===false">
+            <p>SIGN-UP</p>
+        </div>
+
+         <!--change password-->
+         <p id = "passwordSetting" *ngIf = "signin===true">FORGOT PASSWORD?</p>
+
+         <!--Signin or Signup options-->
+         <p id = "account" *ngIf = "signin===true">NEW USER? </p> <p id = "link" *ngIf = "signin===true" (click) = "signIn()"> SIGN-UP!</p>
+         <p id = "account" *ngIf = "signin===false">ALREADY A MEMBER? </p> <p id = "link" *ngIf = "signin===false"  (click) = "signUp()"> SIGN-IN!</p>
+    </div>
+</div>

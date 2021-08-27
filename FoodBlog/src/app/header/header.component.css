@@ -1,0 +1,36 @@
+.material-icons {
+    position  : absolute;
+    right     : 4.7vw;
+    top       : 0vh;
+    font-size : 3vw;
+    color     : rgb(199, 155, 74);
+    cursor    : pointer;
+}
+.content {
+    text-align : center;
+}
+ 
+.content h1 {
+    margin-top : 2vh;
+    font-size  : 4vh;
+    cursor     : pointer;
+}
+
+#dropdownOptions {
+    position         : absolute;
+    right            : 3.5vw;
+    top              : 5.5vh;
+    padding          : 2vw;
+    border           : 3px solid rgb(199, 155, 74);
+    background-color : white;
+}
+
+#browse, #post, #account {
+    cursor : pointer;
+}
+
+
+#browse:hover, #post:hover, #account:hover {
+    text-shadow : 2px 2px 5px rgb(199, 155, 74);
+    
+}

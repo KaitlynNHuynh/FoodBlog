@@ -1,0 +1,54 @@
+ .wrapper{
+    display : flex;
+    height  : 100%;
+ }
+ 
+ .content{
+    text-align : center;
+    margin     : auto auto;
+ }
+
+ #input{
+    display       : block;
+    width         : 22vw;
+    height        : 5vh;
+    margin-bottom : 2vh;
+ }
+
+ #button{
+     width            : 22.3vw;
+     background-color : rgb(199, 155, 74);
+     height           : 5vh;
+     border           : 1px solid white;
+     margin-top       : 4vh;
+     display          : flex;
+ }
+
+#button p{
+    margin : auto auto;
+}
+
+h3{
+    font-size     : 2vw;
+    margin-bottom : 5vh;
+}
+#passwordSetting{
+    color      :rgb(199, 155, 74);
+    margin-top : 3vh;
+}
+
+#link{
+    display     : inline-block;
+    margin-left : .5vw;
+    cursor      : pointer;
+    color       :rgb(199, 155, 74);
+}
+
+#link:hover{
+    text-decoration       : underline;
+    text-decoration-color : white;
+}
+#account{
+    margin-top : 3vh;
+    display    : inline-block;
+}

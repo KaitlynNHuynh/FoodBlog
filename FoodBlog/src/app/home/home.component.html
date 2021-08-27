@@ -1,0 +1,23 @@
+<div class = "content" >
+
+    <app-header></app-header>
+
+    <div class = "cover-1" [@rotatedState]='state' *ngIf="flip===false" >
+
+        <h1 class = "cover-content" id = "title1">FIND AND SHARE</h1>
+        <h1 class = "cover-content" id = "title2" >HOMEMADE RECIPES</h1>
+
+        <div class="grid-container">
+            <div id = "share-button" >BROWSE</div>
+            <div id = "share-button" (click)=rotate() (click)=openShareComponent()>SHARE</div>
+            <div id = "share-button" (click)=rotate() (click)=openAccountComponent()>SIGN-IN</div>
+        </div>
+
+    </div>
+
+    <div class = "cover-2" *ngIf="flip===true">
+        <app-account *ngIf = "account===true"></app-account>
+        <app-share *ngIf = "share===true"></app-share>
+    </div>
+
+</div>
