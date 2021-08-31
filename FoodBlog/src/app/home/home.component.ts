@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {trigger, state, style, animate, transition} from '@angular/animations';
 import { SelectMultipleControlValueAccessor } from '@angular/forms';
 @Component({
@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   flip: boolean = false;
   account: boolean = false;
   share: boolean = false;
+  @Input() page: string;
 
   constructor() { 
   }
