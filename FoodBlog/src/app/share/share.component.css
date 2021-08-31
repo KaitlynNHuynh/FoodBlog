@@ -35,8 +35,8 @@
     background-color :rgb(199, 155, 74);
     color            :white;
     font-size        : 2vw;
-    cursor:pointer;
-    border: 1px solid white;
+    cursor           : pointer;
+    border           : 1px solid white;
 }
 
 #share:hover{
