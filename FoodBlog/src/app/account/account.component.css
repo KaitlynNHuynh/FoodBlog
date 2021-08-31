@@ -35,6 +35,12 @@ h3{
 #passwordSetting{
     color      :rgb(199, 155, 74);
     margin-top : 3vh;
+    cursor:pointer;
+}
+
+#passwordSetting:hover{
+    text-decoration       : underline;
+    text-decoration-color : white;
 }
 
 #link{
