@@ -19,10 +19,11 @@
 #dropdownOptions {
     position         : absolute;
     right            : 3.5vw;
-    top              : 5.5vh;
+    top              : 6.2vh;
     padding          : 2vw;
     border           : 3px solid rgb(199, 155, 74);
     background-color : white;
+    z-index          : 2;
 }
 
 #browse, #post, #account {
